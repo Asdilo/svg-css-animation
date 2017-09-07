@@ -25,7 +25,9 @@ svg {
 
 #arm {
 	animation: arm-wave 1s ease-in-out infinite; 
-	transform-origin: 20% 75%;	
+    transform-origin: 20% 75%;
+    -webkit-transform-origin: 20% 75%;
+    -moz-transform-origin: 20% 75%;			
 }
 
 @keyframes head-bob {
