@@ -1,0 +1,47 @@
+body {
+	width: 90%;
+	margin: 5% 5%;
+	padding: 0;
+	font-family: "Century Gothic", sans-serif;
+}
+
+.spaceman-container {
+    width: 50%;
+    height: 0;
+    padding-top: 48%;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#head {
+	animation: head-bob 2s ease infinite; 
+	transform-origin: 40% 65%;	
+}
+
+#arm {
+	animation: arm-wave 1s ease-in-out infinite; 
+	transform-origin: 20% 75%;	
+}
+
+@keyframes head-bob {
+    0%, 100%   {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+  }
+
+  @keyframes arm-wave {
+    0%, 100%   {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+  }
